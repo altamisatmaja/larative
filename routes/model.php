@@ -73,7 +73,7 @@ class Model
 
         $kolom = implode(", ", $kolom);
         $param = implode(", ", $param);
-        $query = "INSERT INTO {this->tableName} ($kolom) VALUES ($param)";
+        $query = "INSERT INTO {$this->tableName} ($kolom) VALUES ($param)";
         return $this->qry($query, $columnValue);
     }
 
